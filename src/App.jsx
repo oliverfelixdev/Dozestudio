@@ -4,7 +4,7 @@ import Landing from "./components/Landing";
 
 const App = () => {
   return (
-    <div className="min-h-screen w-full">
+    <div className="min-h-screen w-full relative bg-white">
       <Navigation />
       <Landing />
     </div>
