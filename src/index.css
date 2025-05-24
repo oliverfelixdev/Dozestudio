@@ -3,21 +3,34 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'un-sans-light';
+  font-family: "un-sans-light";
   src: url("./assets/fonts/UncutSans-Light.woff2");
 }
 
 @font-face {
-  font-family: 'un-sans-regular';
+  font-family: "un-sans-regular";
   src: url("./assets/fonts/UncutSans-Regular.woff2");
 }
 
 @font-face {
-  font-family: 'un-sans-medium';
+  font-family: "un-sans-medium";
   src: url("./assets/fonts/UncutSans-Medium.woff2");
 }
 
 @font-face {
-  font-family: 'un-sans-semibold';
+  font-family: "un-sans-semibold";
   src: url("./assets/fonts/UncutSans-Semibold.woff2");
+}
+
+.showpage {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 0.1px 2.5rem 0 2.5rem;
+}
+
+.showpage-wrapper {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  position: relative;
 }

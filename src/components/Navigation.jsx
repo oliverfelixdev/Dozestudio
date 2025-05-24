@@ -2,7 +2,7 @@ import React from "react";
 
 const Navigation = () => {
   return (
-    <nav className="w-full absolute top-0 left-0 z-[2] flex items-center justify-start py-7 px-10 mix-blend-difference text-white">
+    <nav className="w-full fixed top-0 left-0 z-[2] flex items-center justify-start py-7 px-10 mix-blend-difference text-white">
       <div className="w-1/3">
         <a className="flex items-center justify-start gap-4" href="#">
           <span className="font-[un-sans-light] text-2xl leading-none cursor-pointer">
@@ -22,7 +22,7 @@ const Navigation = () => {
           {["Projects,", "About,", "Labs"].map((item, index) => (
             <a
               key={index}
-              className="text-xl font-[un-sans-medium] leading-none"
+              className="text-xl font-[un-sans-regular] leading-none"
               href="#"
             >
               {item}
