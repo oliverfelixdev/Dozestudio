@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation";
 import Landing from "./components/Landing";
 import Show from "./components/Show";
 import PinnedSection from "./components/PinnedSection";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
       <Navigation />
       <Landing />
       <Show />
-      {/* <PinnedSection /> */}
+      <Footer />
     </div>
   );
 };
