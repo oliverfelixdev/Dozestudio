@@ -22,10 +22,17 @@
   src: url("./assets/fonts/UncutSans-Semibold.woff2");
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 .showpage {
   min-height: 100vh;
   width: 100vw;
   padding: 0.1px 2.5rem 5rem 2.5rem;
+  position: relative;
+  z-index: 20;
+  background-color: #ffffff;
 }
 
 .showpage-wrapper {
@@ -35,12 +42,40 @@
   position: relative;
 }
 
-
-
-
-
-.crdt-btn{
-  background-color: rebeccapurple;
+.crdt-btn {
   position: relative;
   overflow: hidden;
+  display: inline-block;
+  height: 30px;
+  width: 140px;
+}
+
+.crdt-btn span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.95, 0, 0.17, 1);
+  font-family: "un-sans-regular";
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crdt-btn-span-1 {
+  transform: translateY(0%);
+}
+
+.crdt-btn-span-2 {
+  transform: translateY(100%);
+}
+
+.crdt-btn:hover .crdt-btn-span-1 {
+  transform: translateY(-100%);
+}
+
+.crdt-btn:hover .crdt-btn-span-2 {
+  transform: translateY(0%);
 }

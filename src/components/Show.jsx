@@ -7,7 +7,7 @@ const Show = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const pinRef = useRef(null);
   const scrollRef = useRef(null);
-
+  gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
@@ -18,7 +18,7 @@ const Show = () => {
         pin: true,
         pinSpacing: false,
       });
-    });
+    }, scrollRef);
 
     return () => ctx.revert();
   }, []);
